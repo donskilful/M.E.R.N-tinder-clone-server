@@ -33,7 +33,7 @@ app.post("/tinder/card", (req, res) => {
   });
 });
 
-app.get("/tinder/card", (req, res) => {
+app.get("/tinder/cards", (req, res) => {
   Cards.find((err, data) => {
     if (err) {
       res.status(500).send(err);
